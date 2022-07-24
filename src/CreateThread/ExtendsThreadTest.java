@@ -1,0 +1,1 @@
+package CreateThread;public class ExtendsThreadTest extends Thread {    @Override    public void run() {        System.out.println("继承的方式创建线程：" + Thread.currentThread().getName());    }    public static void main(String[] args) {        System.out.println("主线程");        new ExtendsThreadTest().start();        System.out.println("主线程结束");    }}
